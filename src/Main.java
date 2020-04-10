@@ -9,11 +9,15 @@ public class Main {
         char ch = '\uc2a7';
         boolean bool = true;
 
+        int[] array = new int[25000];
+
         System.out.println(count(5, 9, 18, 7));
         System.out.println(checkSum(3, 8));
         checkNumber(-256);
         System.out.println(checkNegativeNum(-10096));
         sayHello("Фанзиль");
+        getYears(array);
+        leapYearFinder(array, 2020);
     }
 
     static int count(int a, int b, int c, int d){
@@ -46,6 +50,34 @@ public class Main {
 
     static void sayHello(String name){
         System.out.println("Здравствуйте, " + name + "!\nХорошего дня!");
+    }
+
+    static void getYears(int[] arr){
+        int value = 0;
+        for (int i = 0; i < 100000; i += 4) {
+            arr[value] = i;
+            value++;
+        }
+    }
+
+    static void leapYearFinder(int[] arr, int year){
+        int low = 0;
+        int high = arr.length - 1;
+        int mid;
+        while (low <= high) {
+            mid = (low + high) / 2;
+            if (year == arr[mid]) {
+                System.out.println(year + " високосный год");
+                return;
+            } else {
+                if (year < arr[mid]) {
+                    high = mid - 1;
+                } else {
+                    low = mid + 1;
+                }
+            }
+        }
+        System.out.println(year + " не високосный год");
     }
 }
 
