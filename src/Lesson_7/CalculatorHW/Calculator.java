@@ -1,4 +1,4 @@
-package Lesson_7.Calculator;
+package Lesson_7.CalculatorHW;
 
 import javax.swing.*;
 import java.awt.*;

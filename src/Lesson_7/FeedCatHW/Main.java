@@ -1,4 +1,4 @@
-package Lesson_7.FeedCat;
+package Lesson_7.FeedCatHW;
 
 public class Main {
     public static void main(String[] args) {
