@@ -1,4 +1,4 @@
-package Lesson_7.Calculator;
+package Lesson_7.CalculatorHW;
 
 public class Main {
     public static void main(String[] args) {

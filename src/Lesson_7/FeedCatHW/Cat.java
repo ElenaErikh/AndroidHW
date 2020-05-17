@@ -1,4 +1,4 @@
-package Lesson_7.FeedCat;
+package Lesson_7.FeedCatHW;
 
 public class Cat {
     String name;
